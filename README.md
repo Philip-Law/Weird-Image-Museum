@@ -3,4 +3,4 @@
 A fun small webpage that uses HTML, CSS and Javascript that contains some fun images found around the internet.
 
 ### Accessing site
-Visti the site at https://philip-law.github.io/Weird-Image-Museum-Site/
+Visit the site at https://philip-law.github.io/Weird-Image-Museum-Site/
