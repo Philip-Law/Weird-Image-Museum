@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            The Weird Image Museum
+        </title>
+
+        <link rel="icon" href="images/MuseumIcon.ico">
+
+        <!--Style sheet, JavaScript, etc. imports-->
+        <link rel="stylesheet" href="image-museum.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="animations.js"></script>
+    </head>
+
+    <header id="nav-top">
+        <div class="top">
+
+            <h1>Welcome to The Weird Image Museum!</h1>
+
+
+            <figure>
+                <img id="banner" src="images/Museum.jpg" alt="Picture of a museum">
+
+                <figcaption>The page where interesting images are posted!</figcaption>
+            </figure>
+
+        </div>
+
+        <hr>
+
+        <nav>
+            <a class="navigate" href="#nav-top">Back to Top</a>
+            <a class="navigate" href="#nav-img">Images</a>
+            <a class="navigate" href="#nav-bottom">Bottom</a>
+        </nav>
+    </header>
+
+    <body onmouseover="resetText();">
+        <div class="container">
+
+            <main>
+                <p>This is a random site containing random images found on the internet. All images shown belong to their respective owners.</p>
+            </main>
+
+            <section>
+                <div class="images-container" id="nav-img">
+                    <h1>Images</h1>
+
+                    <img class="img-square" src="images/SushiCat.png" alt="Sushi Cat Plushie">
+
+                    <img class="img-square" src="images/Cheeky.png" alt="Cheeky Close Up">
+
+                    <img class="img-square" src="images/BattleCatPlushie.jpg" alt="Battle Cats Plushies">
+
+                    <img class="img-square" src="images/ShockCat.jpg" alt="Shocked Cat">
+
+                    <img class="img-square" src="images/HouseField.png" alt="Houses in a Field">
+
+                    <img class="img-square" src="images/HappyFace.png" alt="Happy Face in Room">
+
+                    <img class="img-square" src="images/PikachuLaugh.png" alt="Pikachu Plush Laughing">
+
+                    <img class="img-square" src="images/WooperYO.jpg" alt="Wooper saying YO">
+
+                    <img class="img-square" src="images/PumpkinSmile.png" alt="Smiling Pumpkin">
+
+                    <img class="img-square" src="images/KirbyJuice.png" alt="Kirby with Juice">
+
+                    <img class="img-square" src="images/DogIce.png" alt="Dog Eating Ice">
+                </div>
+
+            </section>
+
+            <div class="clear"></div>
+
+            <div class="secret" onmouseover="showText();" onmouseout="resetText();">
+                <p class="before">That's all the images we have!</p>
+
+                <p class="hidden">For now...</p>
+            </div>
+
+        </div>
+    </body>
+
+    
+    <footer id="nav-bottom">
+        <hr>
+        <p>Copyright © 2022 Philip Law</p>
+    </footer>
+</html>

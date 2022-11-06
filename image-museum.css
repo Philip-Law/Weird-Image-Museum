@@ -1,0 +1,161 @@
+/* External style sheet for lab02 for CPS530 */
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500;800&display=swap');
+
+/* Website defaults */
+html {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 22px;
+}
+
+/* header properties */
+
+div.top {
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#banner {
+    border: 4px solid white;
+    width: 100%;
+}
+
+/* nav properties */
+nav {
+    position: fixed;
+    top: 12px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    border:2px solid white;
+}
+
+a:hover {
+    background: lightskyblue;
+}
+
+/* box sizing, margin, padding, borders */
+div.images-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1px;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    float: left;
+    display: block;
+}
+
+.img-square {
+    height: 360px;
+    width: 19rem;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+div.clear {
+    clear:both;
+}
+
+
+/* paragraph properties */
+p {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    padding: 30px;
+}
+
+p.before {
+    padding-top: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+p.hidden {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    color: red;
+    position: relative;
+    z-index: 20;
+    margin-top: -120px;
+    padding: 0px;
+    opacity: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile */
+@media only screen and (max-width: 668px) {
+
+    .img-square {
+        width: 10rem;
+        height: 200px;
+        border: 2px solid white;
+    }
+
+    nav a {
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    nav {
+        top: 5px;
+    }
+
+    p, figcaption {
+        font-size: 25px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 669px) and (max-width: 1024px) {
+    
+    .img-square {
+        width: 15rem;
+        height: 250px;
+        border: 3px solid white;
+    }
+
+    nav a {
+        font-size: 22px;
+        padding: 16px;
+    }
+
+    nav {
+        top: 8px;
+    }
+
+    p, figcaption {
+        font-size: 23px;
+    }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 1025px) and (max-width: 1400px){
+    .img-square {
+        width: 18rem;
+        height: 350px;
+    }
+
+    nav a {
+        font-size: 22px;
+        padding: 12px;
+    }
+
+    nav {
+        top: 14px;
+    }
+
+    p, figcaption {
+        font-size: 23px;
+    }
+}
