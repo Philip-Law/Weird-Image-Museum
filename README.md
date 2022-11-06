@@ -1,4 +1,4 @@
-# Weird-Image-Museum-Site
+# Weird-Image-Museum
 
 A fun small webpage that uses HTML, CSS and Javascript that contains some fun images found around the internet.
 
