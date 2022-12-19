@@ -27,6 +27,7 @@ div.top {
 nav {
     position: fixed;
     top: 12px;
+    z-index: 100;
 }
 
 nav a {
@@ -49,8 +50,18 @@ div.images-container {
     width: 90%;
     height: auto;
     text-align: center;
+
+    /* Flexbox properties */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+div.img {
+    width: fit-content;
     float: left;
-    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .img-square {
@@ -58,6 +69,23 @@ div.images-container {
     width: 19rem;
     object-fit: cover;
     border: 4px solid white;
+}
+
+.img:hover {
+    transform: scale(1.15);
+    transition-duration: 0.5s;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.img:hover .caption {
+    display: block;
 }
 
 div.clear {
@@ -114,6 +142,10 @@ p.hidden {
     p, figcaption {
         font-size: 25px;
     }
+
+    .caption {
+        font-size: 15px;
+    }
 }
 
 /* Tablet */
@@ -137,6 +169,10 @@ p.hidden {
     p, figcaption {
         font-size: 23px;
     }
+
+    .caption {
+        font-size: 20px;
+    }
 }
 
 /* Small Desktop */
@@ -157,5 +193,9 @@ p.hidden {
 
     p, figcaption {
         font-size: 23px;
+    }
+
+    .caption {
+        font-size: 25px;
     }
 }
